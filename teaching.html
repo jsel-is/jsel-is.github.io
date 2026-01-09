@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teaching | Dimitris Selis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#4ea1ff'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-950 text-neutral-200 font-sans scroll-smooth">
+<nav class="fixed top-0 left-0 w-full z-50 bg-neutral-900/80 backdrop-blur border-b border-neutral-800">
+  <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+    <div class="text-sm font-semibold">Dimitris Selis</div>
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="index.html" class="text-neutral-400 hover:text-accent">About</a>
+      <a href="publications.html" class="text-neutral-400 hover:text-accent">Publications</a>
+      <a href="teaching.html" class="text-accent">Teaching</a>
+      <a href="cv.pdf" class="text-neutral-400 hover:text-accent">CV</a>
+    </div>
+  </div>
+</nav>
+
+<main class="max-w-4xl mx-auto px-6 pt-28 pb-20">
+
+  <h1 class="text-3xl font-bold mb-12 text-center reveal">
+    Teaching
+  </h1>
+
+  <div class="space-y-6">
+    <div class="reveal group">
+      <button
+        onclick="togglePanel('panel-5g')"
+        class="w-full text-left bg-neutral-900/60
+               border border-neutral-800 rounded-xl p-5
+               hover:border-accent/60
+               hover:shadow-[0_0_40px_rgba(78,161,255,0.15)]
+               transition-all flex justify-between items-center">
+
+        <div>
+          <h3 class="font-semibold text-lg">
+            5G Architectures, enabling technologies, vertical industries & KPIs
+          </h3>
+          <p class="text-sm text-neutral-400">
+            Ongoing teaching · 2024 – Present
+          </p>
+        </div>
+
+        <span data-chevron
+              class="text-neutral-400 group-hover:text-accent
+                     transition-transform duration-300">
+          <i class="fa-solid fa-chevron-down"></i>
+        </span>
+      </button>
+      <div id="panel-5g"
+           class="hidden mt-2 bg-neutral-900/40
+                  border border-neutral-800 rounded-xl p-5">
+
+        <p class="text-sm text-neutral-400 mb-4">
+          Teaching modern 5G system architectures with an industry-oriented
+          perspective, focusing on how architectural decisions translate
+          into measurable performance indicators in operational networks.
+        </p>
+
+        <hr class="border-neutral-800 my-4" />
+
+        <div class="grid md:grid-cols-3 gap-3 text-xs">
+          <div class="bg-neutral-800 rounded p-3">
+            <strong class="text-neutral-300">Architecture</strong><br />
+            5G Core, RAN, slicing, cloud-native design
+          </div>
+          <div class="bg-neutral-800 rounded p-3">
+            <strong class="text-neutral-300">Industry</strong><br />
+            Telecom operations, deployment practices
+          </div>
+          <div class="bg-neutral-800 rounded p-3">
+            <strong class="text-neutral-300">KPIs</strong><br />
+            SLA, latency, utilization, capacity planning
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal group">
+      <button
+        onclick="togglePanel('panel-cellular')"
+        class="w-full text-left bg-neutral-900/60
+               border border-neutral-800 rounded-xl p-5
+               hover:border-accent/60
+               hover:shadow-[0_0_40px_rgba(78,161,255,0.15)]
+               transition-all flex justify-between items-center">
+
+        <div>
+          <h3 class="font-semibold text-lg">
+            Fundamentals of Cellular Networks
+          </h3>
+          <p class="text-sm text-neutral-400">
+            Winter Semester 2024
+          </p>
+        </div>
+
+        <span data-chevron
+              class="text-neutral-400 group-hover:text-accent
+                     transition-transform duration-300">
+          <i class="fa-solid fa-chevron-down"></i>
+        </span>
+      </button>
+
+      <div id="panel-cellular"
+           class="hidden mt-2 bg-neutral-900/40
+                  border border-neutral-800 rounded-xl p-5">
+
+        <p class="text-sm text-neutral-400 mb-4">
+          Fundamental principles
+          of cellular networks, providing students with a solid grounding
+          in mobile communication systems.
+        </p>
+
+        <hr class="border-neutral-800 my-4" />
+
+        <div class="grid md:grid-cols-2 gap-3 text-xs">
+          <div class="bg-neutral-800 rounded p-3">
+            Radio access principles and spectrum usage
+          </div>
+          <div class="bg-neutral-800 rounded p-3">
+            Mobility management and cellular evolution
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="border-t border-neutral-800 bg-neutral-950/80 backdrop-blur mt-20">
+  <div class="max-w-6xl mx-auto px-6 py-10">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-sm font-semibold text-neutral-200 mb-2">
+          Dimitris Selis
+        </h3>
+        <p class="text-sm text-neutral-400">
+          PhD Candidate
+        </p>
+        <p class="text-xs text-neutral-500 mt-2">
+          Universitat Politècnica de Catalunya (UPC)
+        </p>
+      </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="mt-10 pt-6 border-t border-neutral-800
+                flex flex-col md:flex-row
+                justify-between items-center
+                text-xs text-neutral-500 gap-3">
+
+      <p>
+        © <span id="year"></span> Dimitris Selis
+      </p>
+
+      <p>
+        Built with <span class="text-neutral-400">HTML</span>,
+        <span class="text-neutral-400">Tailwind CSS</span> &amp;
+        <i class="fa-notdog fa-solid fa-heart fa-beat" style="color: #b51a00;"></i>
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+<script>
+  function togglePanel(id) {
+    const panel = document.getElementById(id);
+    panel.classList.toggle('hidden');
+
+    const button = panel.previousElementSibling;
+    const chevron = button.querySelector('[data-chevron]');
+    chevron.classList.toggle('rotate-180');
+  }
+
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(r => observer.observe(r));
+</script>
+
+</body>
+</html>

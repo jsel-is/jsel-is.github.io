@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Publications | Dimitris Selis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#4ea1ff'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-950 text-neutral-200 font-sans scroll-smooth">
+<nav class="fixed top-0 left-0 w-full z-50 bg-neutral-900/80 backdrop-blur border-b border-neutral-800">
+  <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+    <div class="text-sm font-semibold">Dimitris Selis</div>
+    <div class="hidden md:flex gap-6 text-sm">
+      <a href="index.html" class="text-neutral-400 hover:text-accent">About</a>
+      <a href="publications.html" class="text-accent">Publications</a>
+      <a href="teaching.html" class="text-neutral-400 hover:text-accent">Teaching</a>
+      <a href="cv.pdf" class="text-neutral-400 hover:text-accent">CV</a>
+    </div>
+  </div>
+</nav>
+
+<main class="max-w-4xl mx-auto px-6 pt-28 pb-20">
+
+<h1 class="text-3xl font-bold mb-12 text-center reveal">
+  Publications
+</h1>
+
+<div class="relative">
+
+<div class="absolute left-1/2 top-0 h-full w-px
+            bg-gradient-to-b from-transparent via-neutral-700 to-transparent">
+</div>
+
+<!--2025-->
+<div class="reveal flex justify-center mb-10">
+  <span class="bg-neutral-900 px-4 py-1 rounded-full text-sm
+               text-neutral-300 border border-neutral-700">
+    2025
+  </span>
+</div>
+
+
+<div class="reveal relative mb-12">
+  <div class="mx-auto max-w-xl bg-neutral-900/60
+              border border-neutral-800 rounded-xl p-5
+              hover:border-accent/60
+              hover:shadow-[0_0_40px_rgba(78,161,255,0.15)]
+              transition-all">
+
+    <div class="flex gap-4">
+      <div class="flex-1">
+        <h3 class="font-semibold mb-2">KARMA</h3>
+
+        <p class="text-sm text-neutral-400 mb-3">
+          A zero-touch, DRL-driven autoscaling framework for cloud-native Kubernetes
+          edge environments, enabling adaptive and stable orchestration beyond
+          heuristic HPA policies.
+        </p>
+
+        <div class="flex gap-2 text-xs mb-3">
+          <span class="bg-neutral-800 px-2 py-1 rounded"> <a href="manuscripts/karma.pdf" class="text-accent hover:underline">paper</a></span>  
+        </div>
+
+        <p class="text-xs text-neutral-500">
+          IEEE GLOBECOM 2025 · Taipei, Taiwan
+        </p>
+      </div>
+      <div class="hidden md:flex flex-col gap-2 w-28 shrink-0">
+        <img src="images/neural1.png"
+             alt="System architecture"
+             class="rounded-md border border-neutral-800 hover:scale-105 transition-transform" />
+        <img src="images/systemodel5g.png"
+             alt="Dueling DDQN"
+             class="rounded-md border border-neutral-800 hover:scale-105 transition-transform" />
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="reveal relative mb-16">
+  <div class="mx-auto max-w-xl bg-neutral-900/60
+              border border-neutral-800 rounded-xl p-5
+              hover:border-accent/60
+              hover:shadow-[0_0_40px_rgba(78,161,255,0.15)]
+              transition-all">
+
+    <div class="flex gap-4">
+      <div class="flex-1">
+        <h3 class="font-semibold mb-2">ADDAPT6G</h3>
+
+        <p class="text-sm text-neutral-400 mb-3">
+          Distributed, cloud-native, MARL decision-making framework for 6G networks that leverages Dueling Double Deep Q-Networks 
+          to optimize containerized network function placement and migration.
+        </p>
+
+        <div class="flex gap-2 text-xs mb-3">
+          <span class="bg-neutral-800 px-2 py-1 rounded"> <a href="https://ieeexplore.ieee.org/abstract/document/11160944"
+             target="_blank"
+             class="text-accent hover:underline">
+            IEEE Xplore
+          </a></span>
+        </div>
+
+        <p class="text-xs text-neutral-500">
+          IEEE ICC 2025 · Montreal, QC, Canada
+        </p>
+      </div>
+
+      <div class="hidden md:block w-28">
+        <img src="images/multidomainU.png"
+             class="rounded-md border border-neutral-800 hover:scale-105 transition-transform" />
+              <img src="images/sm2.png"
+                alt="architecture"
+                class="rounded-md border border-neutral-800 hover:scale-105 transition-transform" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="reveal relative mb-16">
+  <div class="mx-auto max-w-xl bg-neutral-900/60
+              border border-neutral-800 rounded-xl p-5
+              hover:border-accent/60
+              hover:shadow-[0_0_40px_rgba(78,161,255,0.15)]
+              transition-all">
+
+    <div class="flex gap-4">
+      <div class="flex-1">
+        <h3 class="font-semibold mb-2">Scaling OPS</h3>
+
+        <p class="text-sm text-neutral-400 mb-3">
+          SLA-aware autoscaling framework for Kubernetes that combines 
+          online RL-based scaling with an offline RLOps training pipeline
+        </p>
+
+         <div class="flex gap-2 text-xs mb-3">
+          <span class="bg-neutral-800 px-2 py-1 rounded"> <a href="manuscripts/scalingops.pdf" class="text-accent hover:underline">paper</a></span>  
+        </div>
+
+        <p class="text-xs text-neutral-500">
+          IEEE NFV SDN 2025 · Athens, Greece · co-author
+        </p>
+      </div>
+
+      <div class="hidden md:block w-28">
+        <img src="images/Offline_Pipeline.png"
+             class="rounded-md border border-neutral-800 hover:scale-105 transition-transform" />
+              <img src="images/pods.png"
+                alt="architecture"
+                class="rounded-md border border-neutral-800 hover:scale-105 transition-transform" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--2024-->
+<div class="reveal flex justify-center mb-10">
+  <span class="bg-neutral-900 px-4 py-1 rounded-full text-sm
+               text-neutral-300 border border-neutral-700">
+    2024
+  </span>
+</div>
+
+<div class="reveal relative mt-8 mb-16">
+  <div class="mx-auto max-w-xl bg-neutral-900/40
+              border border-neutral-800 rounded-xl p-4">
+
+    <ul class="space-y-3 text-sm text-neutral-400">
+      <li>
+        <span class="font-medium text-neutral-300">
+          An Innovative Multi-Scale Strategy-Based Decision Engine for Zero-Touch Management and Orchestration in 6G
+        </span><br />
+        <span class="text-xs">
+          IEEE CAMAD 2024 · Athens, Greece · co-author
+           <a href="https://ieeexplore.ieee.org/document/10942611"
+             target="_blank"
+             class="text-accent hover:underline">
+            IEEE Xplore
+          </a>
+        </span>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+</div>
+</main>
+
+<footer class="border-t border-neutral-800 bg-neutral-950/80 backdrop-blur mt-20">
+  <div class="max-w-6xl mx-auto px-6 py-10">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-sm font-semibold text-neutral-200 mb-2">
+          Dimitris Selis
+        </h3>
+        <p class="text-sm text-neutral-400">
+          PhD Candidate
+        </p>
+        <p class="text-xs text-neutral-500 mt-2">
+          Universitat Politècnica de Catalunya (UPC)
+        </p>
+      </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="mt-10 pt-6 border-t border-neutral-800
+                flex flex-col md:flex-row
+                justify-between items-center
+                text-xs text-neutral-500 gap-3">
+
+      <p>
+        © <span id="year"></span> Dimitris Selis
+      </p>
+
+      <p>
+        Built with <span class="text-neutral-400">HTML</span>,
+        <span class="text-neutral-400">Tailwind CSS</span> &amp;
+        <i class="fa-notdog fa-solid fa-heart fa-beat" style="color: #b51a00;"></i>
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(r => observer.observe(r));
+</script>
+
+</body>
+</html>
