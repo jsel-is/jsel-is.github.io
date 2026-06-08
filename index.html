@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dimitris Selis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dimitris Selis — PhD candidate at UPC working on cloud-native systems, ML for systems, and elastic resource management." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body class="site-landing-page">
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="site-nav">
+    <a href="index.html" class="site-logo">
+      <span class="site-logo-mark">DS</span>
+      <span>Dimitris Selis</span>
+    </a>
+    <nav class="site-nav-links" aria-label="Main">
+      <a href="index.html#about" class="is-active">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.pdf" class="site-nav-cta">CV</a>
+    </nav>
+    <button type="button" id="siteMenuBtn" class="site-nav-menu-btn" aria-label="Open menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <div id="siteMobileMenu" class="site-mobile-menu">
+    <a href="index.html#about" class="is-active">About</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.pdf">CV</a>
+  </div>
+
+  <section class="site-hero">
+    <div class="site-hero-inner">
+      <div>
+        <p class="site-kicker"><span class="site-kicker-dot"></span> UPC · BarcelonaTech</p>
+        <h1 class="site-headline">
+          Dimitris Selis
+        </h1>
+        <p class="site-subline">PhD Candidate · Cloud-native Systems · Elastic resource management · ML for Systems</p>
+        <div class="site-hero-cta">
+          <a href="publications.html" class="site-btn site-btn--accent"><i class="fa-solid fa-book"></i> Publications</a>
+          <a href="cv.pdf" class="site-btn site-btn--ghost"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+        </div>
+        <dl class="site-stats">
+          <div>
+            <dt>Cloud–edge</dt>
+            <dd>Distributed systems research</dd>
+          </div>
+          <div>
+            <dt>ML / DRL</dt>
+            <dd>Systems reliability &amp; performance</dd>
+          </div>
+          <div>
+            <dt>Kubernetes</dt>
+            <dd>SLA-aware orchestration</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="site-preview reveal" id="heroPublications">
+        <div class="site-preview-window">
+        <div class="site-preview-chrome">
+          <span></span><span></span><span></span>
+          <em>research / upc</em>
+        </div>
+        <div class="site-preview-body">
+          <a href="publications.html" class="site-preview-card is-active" data-preview-card>
+            <span class="site-preview-icon"><i class="fa-solid fa-brain"></i></span>
+            <span class="site-preview-text">
+              <strong>MIND · DRL scheduling</strong>
+              <small>Cloud-edge · SLA-aware · under review</small>
+            </span>
+            <span class="site-preview-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <a href="https://ieeexplore.ieee.org/document/11431964" class="site-preview-card"  data-preview-card target="_blank" rel="noopener noreferrer">
+            <span class="site-preview-icon"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+            <span class="site-preview-text">
+              <strong>KARMA · K8s autoscaling</strong>
+              <small>GLOBECOM 2025 · paper</small>
+            </span>
+            <span class="site-preview-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+          <a href="https://ieeexplore.ieee.org/abstract/document/11160944" class="site-preview-card" data-preview-card target="_blank" rel="noopener noreferrer">
+            <span class="site-preview-icon"><i class="fa-solid fa-network-wired"></i></span>
+            <span class="site-preview-text">
+              <strong>ADDAPT6G · 6G placement</strong>
+              <small>ICC 2025 · IEEE Xplore</small>
+            </span>
+            <span class="site-preview-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="site-platform reveal" id="about">
+    <header class="site-platform-head">
+      <h2>Research profile</h2>
+      <p>PhD work at UPC on cloud–edge systems, learning-based control, and reliability in cloud-native environments.</p>
+    </header>
+
+    <div class="site-bento-grid">
+
+      <article class="site-bento site-bento--about reveal">
+        <div class="site-bento-label">01</div>
+        <h3>About</h3>
+        <p class="site-bento-about-text site-drop-cap">
+          I am a PhD candidate at the Universitat Politècnica de Catalunya (UPC) working on applied research in cloud–edge distributed systems, with a focus on learning-driven scheduling, autoscaling and reliability under highly volatile workloads. My research bridges large-scale infrastructure with learning-based control and robust optimization, aiming to improve service availability, trustworthiness and performance under uncertainty in cloud-native environments.
+        </p>
+        <i class="fa-solid fa-user-graduate site-bento-bg-icon" aria-hidden="true"></i>
+      </article>
+
+      <article class="site-bento site-bento--scope reveal">
+        <div class="site-bento-label">02</div>
+        <h3>Research scope</h3>
+        <p class="site-bento-hint">Cloud-native · Learning-based control · Reliability</p>
+        <ul class="site-list">
+          <li><i class="fa-solid fa-cloud"></i> Cloud-edge infrastructure under uncertainty</li>
+          <li><i class="fa-brands fa-docker"></i> K8s-native orchestration for elastic, SLA-aware services</li>
+          <li><i class="fa-solid fa-brain"></i> ML / DRL for systems reliability and performance</li>
+          <li><i class="fa-solid fa-network-wired"></i> Large-scale distributed systems</li>
+          <li><i class="fa-solid fa-gauge-high"></i> Reliability &amp; performance optimization</li>
+        </ul>
+        <i class="fa-solid fa-server site-bento-bg-icon" aria-hidden="true"></i>
+      </article>
+
+      <article class="site-bento site-bento--photo reveal">
+        <div class="site-bento-label">03</div>
+        <figure class="site-portrait">
+          <i class="fa-solid fa-id-card site-bento-bg-icon site-bento-bg-icon--photo" aria-hidden="true"></i>
+          <div class="site-portrait-frame">
+            <img
+              src="images/image.png"
+              alt="Portrait of Dimitris Selis"
+              class="site-portrait-img"
+              width="480"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <figcaption class="site-portrait-caption">
+            <span class="site-portrait-name">Dimitris Selis</span>
+            <span class="site-portrait-role">PhD Candidate · UPC — BarcelonaTech</span>
+          </figcaption>
+        </figure>
+        <div class="site-bento-contact">
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:dimitrios.selis@upc.edu">dimitrios.selis@upc.edu</a></p>
+          <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dimitris-selis" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+            <a href="https://scholar.google.com/citations?user=bMQllWUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="site-bento site-bento--highlights reveal">
+        <div class="site-bento-label">04</div>
+        <div class="site-highlights-head">
+          <h3>Research highlights</h3>
+          <a href="publications.html" class="site-link">All publications →</a>
+        </div>
+        <div class="site-paper-grid">
+          <div class="site-paper-card">
+            <h4>MIND the Proximity</h4>
+            <p>Transformer-based DRL scheduler for service provisioning in cloud-edge systems.</p>
+            <div class="site-bento-stats">
+              <div class="site-bento-stat"><strong>↑ SLA</strong>Satisfy</div>
+              <div class="site-bento-stat"><strong>↓ P95</strong>Latency</div>
+              <div class="site-bento-stat"><strong>Stable</strong>Scale</div>
+            </div>
+            <p class="site-bento-meta">IEEE TCC, under review</p>
+          </div>
+          <div class="site-paper-card">
+            <h4>KARMA</h4>
+            <p>Zero-touch DRL autoscaling for Kubernetes edge workloads beyond HPA.</p>
+            <div class="site-bento-stats">
+              <div class="site-bento-stat"><strong>↓ SLA</strong>Viol.</div>
+              <div class="site-bento-stat"><strong>↓ P95</strong>Latency</div>
+              <div class="site-bento-stat"><strong>Stable</strong>Scale</div>
+            </div>
+             <p class="site-bento-meta">IEEE GLOBECOM 2025 · <a href="https://ieeexplore.ieee.org/document/11431964" class="site-link" target="_blank" rel="noopener noreferrer">Xplore</a></p>
+          </div>
+          <div class="site-paper-card">
+            <h4>ADDAPT6G</h4>
+            <p>Dueling DDQN for service placement in LXD containers.</p>
+            <div class="site-bento-stats">
+              <div class="site-bento-stat"><strong>↓ SLA</strong>Viol.</div>
+              <div class="site-bento-stat"><strong>Robust</strong>Policy</div>
+              <div class="site-bento-stat"><strong>OOD</strong>Stable</div>
+            </div>
+            <p class="site-bento-meta">IEEE ICC 2025 · <a href="https://ieeexplore.ieee.org/abstract/document/11160944" class="site-link" target="_blank" rel="noopener noreferrer">Xplore</a></p>
+          </div>
+        </div>
+        <i class="fa-solid fa-flask site-bento-bg-icon" aria-hidden="true"></i>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer-simple">
+      <p class="site-footer-line"><strong>Dimitris Selis</strong> · PhD Candidate · Universitat Politècnica de Catalunya (UPC)</p>
+      <p class="site-footer-line site-footer-made">
+        © <span id="year"></span> · Built with
+        <span class="site-footer-tech">HTML</span>,
+        <span class="site-footer-tech">CSS</span> &amp;
+        <span class="site-footer-tech">JavaScript</span> &amp;
+        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6ceb9e4c65614c8c905613816a80e6c3"}'></script>
+</body>
+</html>
